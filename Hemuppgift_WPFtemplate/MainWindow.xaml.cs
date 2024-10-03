@@ -11,7 +11,8 @@ namespace Hemuppgift_WPFtemplate
 
         private void btnGrid_Click(object sender, RoutedEventArgs e)
         {
-
+            GridWindow gridWindow = new GridWindow();
+            gridWindow.Show();
         }
 
         private void btnStackPanel_Click(object sender, RoutedEventArgs e)
