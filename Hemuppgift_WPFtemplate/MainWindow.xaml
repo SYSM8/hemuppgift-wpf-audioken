@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    
     <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnGrid" Content="Grid" Click="btnGrid_Click"/>
+        <Button x:Name="btnStackPanel" Content="StackPanel" Grid.Column="2" Click="btnStackPanel_Click"/>
+        <Button x:Name="btnWrapPanel" Content="WrapPanel" Grid.Row="1" Click="btnWrapPanel_Click"/>
+        <Button x:Name="btnDockPanel" Content="DockPanel" Grid.Row="1" Grid.Column="1" Click="btnDockPanel_Click"/>
 
     </Grid>
+    
 </Window>
