@@ -3,9 +3,6 @@ using System.Windows.Controls;
 
 namespace Hemuppgift_WPFtemplate
 {
-    /// <summary>
-    /// Interaction logic for StackPanelWindow.xaml
-    /// </summary>
     public partial class StackPanelWindow : Window
     {
         public StackPanelWindow()
@@ -13,13 +10,14 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
-        // Ändrar orienteringen för sqrColors till horisontellt
+        // Ändrar orienteringen för färgade fyrkanter till horisontell för att visa dom i en rad
         private void rbtnHorizontal_Click(object sender, RoutedEventArgs e)
         {
+
             sqrColors.Orientation = Orientation.Horizontal;
         }
 
-        // Ändrar orienteringen för sqrColors till vertikalt
+        // Ändrar orienteringen för färgade fyrkanter till vertikal för att visa dom i en kolumn
         private void rbtnVertical_Click(object sender, RoutedEventArgs e)
         {
             sqrColors.Orientation = Orientation.Vertical;

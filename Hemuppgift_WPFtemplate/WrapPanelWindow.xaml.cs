@@ -3,9 +3,6 @@ using System.Windows.Controls;
 
 namespace Hemuppgift_WPFtemplate
 {
-    /// <summary>
-    /// Interaction logic for WrapPanelWindow.xaml
-    /// </summary>
     public partial class WrapPanelWindow : Window
     {
         public WrapPanelWindow()
@@ -13,11 +10,13 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
+        // Ändrar orienteringen för färgade cirklar till horisontell för att visa dom i en rad
         private void rbtnHorizontal_Click(object sender, RoutedEventArgs e)
         {
             elpsColors.Orientation = Orientation.Horizontal;
         }
 
+        // Ändrar orienteringen för färgade cirklar till vertikal för att visa dom i en rad
         private void rbtnVertical_Click(object sender, RoutedEventArgs e)
         {
             elpsColors.Orientation = Orientation.Vertical;

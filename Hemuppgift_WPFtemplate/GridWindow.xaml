@@ -7,36 +7,54 @@
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
 
+    <!-- START -->
     <Grid>
         
+        <!-- Definiera 5 rader -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            
+            <!-- 1 rad med bestämt höjd reserverad för header -->
+            <RowDefinition Height="40"/>
+            
+            <!-- 4 rader (raddelen i ett 4x4 rutnät) -->
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
         </Grid.RowDefinitions>
 
+        <!-- Definiera 4 kolumner -->
         <Grid.ColumnDefinitions>
+            
+            <!-- 4 kolumner (kolumndelen i ett 4x4 rutnät) -->
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
+            
         </Grid.ColumnDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+        <!-- Header där användaren kan mata in koordinater för rad och kolumn -->
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="4">
 
+            <!-- Mata in índex för rad -->
             <TextBlock Text="Row" Height="20" VerticalAlignment="Top"/>
             <TextBox x:Name="txtRow" Width="50" Height="20" VerticalAlignment="Top"/>
 
+            <!-- Mata in index för kolumn -->
             <TextBlock Text="Column" Height="20" VerticalAlignment="Top"/>
             <TextBox x:Name="txtColumn" Width="50" Height="20" VerticalAlignment="Top"/>
             
+            <!-- Knapp för att läsa in koordinaterna -->
             <Button x:Name="btnApply" Content="Apply" Width="100" Height="20" VerticalAlignment="Top" Click="btnApply_Click"/>
             
         </StackPanel>
 
-        <Button x:Name="btnPosition" Grid.Row="1" Content="Row 0, Column 0" Background="LightGreen" Visibility="Collapsed"/>
+        <!-- Inaktiv knapp för visuell presentation av inmatade koordinater -->
+        <Button x:Name="btnPosition" Grid.Row="1" Content="Row 0, Column 0" Background="LightGreen"/>
+        
     </Grid>
+    <!-- SLUT -->
     
 </Window>

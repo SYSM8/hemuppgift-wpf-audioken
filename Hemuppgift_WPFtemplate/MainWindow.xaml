@@ -7,26 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     
+    <!-- START MAIN -->
     <Grid>
         
-        <!-- Definiera antal rader -->
+        <!-- Definiera 2 rader -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <!-- Definiera antal kolumner -->
+        <!-- Definiera 2 kolumner -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <!-- Knappar som ska öppna fönster för de olika layout kontrollerna -->
+        <!-- Knappar för att öppna fönster med olika layoutkontroller -->
         <Button x:Name="btnGrid" Content="Grid" Click="btnGrid_Click"/>
         <Button x:Name="btnStackPanel" Content="StackPanel" Grid.Column="2" Click="btnStackPanel_Click"/>
         <Button x:Name="btnWrapPanel" Content="WrapPanel" Grid.Row="1" Click="btnWrapPanel_Click"/>
         <Button x:Name="btnDockPanel" Content="DockPanel" Grid.Row="1" Grid.Column="1" Click="btnDockPanel_Click"/>
 
     </Grid>
+    <!-- SLUT MAIN -->
     
 </Window>

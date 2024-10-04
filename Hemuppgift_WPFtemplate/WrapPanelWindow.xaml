@@ -7,17 +7,18 @@
         mc:Ignorable="d"
         Title="WrapPanelWindow" Height="450" Width="800">
 
-    <!-- Hela fönstret med vertikal scrollfunktion -->
+    <!-- START -->
+    <!-- Vertikal scrollfunktion -->
     <ScrollViewer>
         <StackPanel>
 
-            <!-- Radioknappar för att välja orientering av elpsColors -->
-            <StackPanel Orientation="Horizontal" Margin="15,20,0,20">
+            <!-- Radioknappar för att välja orientering av färgade fyrkanter -->
+            <StackPanel Orientation="Horizontal" Margin="15">
                 <RadioButton x:Name="rbtnHorizontal" Content="Horizontal" Click="rbtnHorizontal_Click"/>
                 <RadioButton x:Name="rbtnVertical" Content="Vertical" Margin="10,0,0,0" Click="rbtnVertical_Click"/>
             </StackPanel>
 
-            <!-- Cirklar med blandade färger som blir mindre och mindre i storlek -->
+            <!-- Färgade cirklar som minskar i storlek -->
             <WrapPanel x:Name="elpsColors" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10">
                 <Ellipse Fill="Red" Width="100" Height="100" Margin="5"/>
                 <Ellipse Fill="Orange" Width="90" Height="90" Margin="5"/>
@@ -31,5 +32,6 @@
             
         </StackPanel>
     </ScrollViewer>
+    <!-- SLUT -->
 
 </Window>

@@ -13,26 +13,28 @@ namespace Hemuppgift_WPFtemplate
         private void btnGrid_Click(object sender, RoutedEventArgs e)
         {
             GridWindow gridWindow = new GridWindow(); // Skapar ett nytt objekt av fönstret
-            gridWindow.Show(); // Öppnar fönster
+            gridWindow.Show(); // Öppnar fönstret
         }
 
-        // Öppnar fönster för StackPanelWindow
+        // Öppnar fönstret för StackPanelWindow
         private void btnStackPanel_Click(object sender, RoutedEventArgs e)
         {
             StackPanelWindow stackPanelWindow = new StackPanelWindow(); // Skapar ett nytt objekt av fönstret
-            stackPanelWindow.Show(); // Öppnar fönster
+            stackPanelWindow.Show(); // Öppnar fönstret
         }
 
-        // Öppnar fönster för WrapPanelWindow
+        // Öppnar fönstret för WrapPanelWindow
         private void btnWrapPanel_Click(object sender, RoutedEventArgs e)
         {
             WrapPanelWindow wrapPanelWindow = new WrapPanelWindow(); // Skapar ett nytt objekt av fönstret
-            wrapPanelWindow.Show(); // Öppnar fönster
+            wrapPanelWindow.Show(); // Öppnar fönstret
         }
 
+        // Öppnar fönstret för DockPanel
         private void btnDockPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            DockPanelWindow dockPanelWindow = new DockPanelWindow(); // Skapar ett nytt objekt av fönstret
+            dockPanelWindow.Show(); // Öppnar fönstret
         }
     }
 }
