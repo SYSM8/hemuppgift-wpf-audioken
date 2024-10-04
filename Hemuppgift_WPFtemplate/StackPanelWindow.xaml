@@ -7,18 +7,18 @@
         mc:Ignorable="d"
         Title="StackPanelWindow" Height="450" Width="800">
 
-    <!-- StackPanelWindow med scrollfunktion -->
-    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+    <!-- Hela fönstret med vertikal scrollfunktion -->
+    <ScrollViewer>
         <StackPanel>
 
             <!-- Radioknappar för att välja orientering av sqrColors -->
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal" Margin="15,20,0,20">
                 <RadioButton x:Name="rbtnHorizontal" Content="Horizontal" Click="rbtnHorizontal_Click"/>
-                <RadioButton x:Name="rbtnVertical" Content="Vertical" Click="rbtnVertical_Click"/>
+                <RadioButton x:Name="rbtnVertical" Content="Vertical" Click="rbtnVertical_Click" Margin="10,0,0,0"/>
             </StackPanel>
 
             <!-- Fyrkanter med blandade färger som blir mindre och mindre i storlek -->
-            <StackPanel x:Name="sqrColors" Orientation="Horizontal" HorizontalAlignment="Left">
+            <StackPanel x:Name="sqrColors" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10">
                 <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
                 <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
                 <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
