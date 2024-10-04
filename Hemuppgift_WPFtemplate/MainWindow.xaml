@@ -9,16 +9,19 @@
     
     <Grid>
         
+        <!-- Definiera antal rader -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
+        <!-- Definiera antal kolumner -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <!-- Knappar som ska öppna fönster för de olika layout kontrollerna -->
         <Button x:Name="btnGrid" Content="Grid" Click="btnGrid_Click"/>
         <Button x:Name="btnStackPanel" Content="StackPanel" Grid.Column="2" Click="btnStackPanel_Click"/>
         <Button x:Name="btnWrapPanel" Content="WrapPanel" Grid.Row="1" Click="btnWrapPanel_Click"/>

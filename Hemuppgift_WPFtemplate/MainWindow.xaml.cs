@@ -9,15 +9,18 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
+        // Öppnar fönstret för GridWindow
         private void btnGrid_Click(object sender, RoutedEventArgs e)
         {
-            GridWindow gridWindow = new GridWindow();
-            gridWindow.Show();
+            GridWindow gridWindow = new GridWindow(); // Skapar ett nytt objekt av fönstret
+            gridWindow.Show(); // Öppna fönster
         }
 
+        // Öppnar fönster för StackPanelWindow
         private void btnStackPanel_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanelWindow stackPanelWindow = new StackPanelWindow(); // Skapar ett nytt objekt av fönstret
+            stackPanelWindow.Show(); // Öppna fönster
         }
 
         private void btnWrapPanel_Click(object sender, RoutedEventArgs e)

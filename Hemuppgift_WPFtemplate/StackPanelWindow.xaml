@@ -1,0 +1,35 @@
+﻿<Window x:Class="Hemuppgift_WPFtemplate.StackPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
+        mc:Ignorable="d"
+        Title="StackPanelWindow" Height="450" Width="800">
+
+    <!-- StackPanelWindow med scrollfunktion -->
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <StackPanel>
+
+            <!-- Radioknappar för att välja orientering av sqrColors -->
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="rbtnHorizontal" Content="Horizontal" Click="rbtnHorizontal_Click"/>
+                <RadioButton x:Name="rbtnVertical" Content="Vertical" Click="rbtnVertical_Click"/>
+            </StackPanel>
+
+            <!-- Fyrkanter med blandade färger som blir mindre och mindre i storlek -->
+            <StackPanel x:Name="sqrColors" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
+                <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
+                <Rectangle Fill="LightGreen" Width="70" Height="70" Margin="5"/>
+                <Rectangle Fill="Green" Width="60" Height="60" Margin="5"/>
+                <Rectangle Fill="LightBlue" Width="50" Height="50" Margin="5"/>
+                <Rectangle Fill="Blue" Width="40" Height="40" Margin="5"/>
+                <Rectangle Fill="Black" Width="30" Height="30" Margin="5"/>
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+    
+</Window>
