@@ -13,7 +13,7 @@ namespace Hemuppgift_WPFtemplate
         // Hanterar klick på "Apply" och uppdaterar btnPosition i grid
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
-            // Kontrollerar att båda inmatningarna är siffror mellan 0-4
+            // Kontrollerar att båda inmatningarna är heltal mellan 0-3
             if (int.TryParse(txtRow.Text, out int row) && int.TryParse(txtColumn.Text, out int column)
                 && row >= 0 && row <= 3 && column >= 0 && column <= 3)
             {
